@@ -44,6 +44,7 @@ while game.is_on:
 
     result = game.check_winner()
     if result == 1 or result == 2:
+        game.print_board()
         print(f"Player {result} wins! 🎉")
         game.is_on = False
     else:
